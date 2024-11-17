@@ -1,0 +1,83 @@
+/* Background styling */
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Message box container */
+.message-box {
+  width: 440px;
+  height: 460px;
+  background-color: #fff;
+  border-radius: 1.5rem; /* More modern rounded corners */
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added subtle shadow for a more polished look */
+}
+
+/* Content styling within message box */
+.content {
+  margin: 2rem 3rem 5rem 3rem; /* Consistent spacing */
+  background-color: white;
+  flex-grow: 1;
+}
+
+/* Tick image background */
+.tick-img {
+  background: url("../../../public/images/icon-list.svg");
+  padding: 2.5rem 0 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px;
+  height: 40px;
+  margin: 0 auto; /* Centering the tick image */
+}
+
+/* Message and header styling */
+.message {
+  padding-bottom: 1.25rem; /* Reduced space for better alignment */
+}
+
+h1 {
+  padding-bottom: 1.25rem; /* Reduced space for consistency */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 375px) {
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Clean up overflow */
+  }
+
+  .message-box {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .content {
+    margin: 1rem;
+    padding-top: 15%; /* More balanced top padding */
+  }
+
+  .message {
+    padding-bottom: 4rem; /* Adjusted to suit smaller screens */
+  }
+
+  .tick-img {
+    height: 60px;
+    padding-bottom: 2rem;
+  }
+
+  h1 {
+    padding-bottom: 2rem; /* Better spacing on small screens */
+  }
+}

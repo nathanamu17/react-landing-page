@@ -1,0 +1,23 @@
+/* Error message styling */
+.error-message {
+  color: hsl(4, 100%, 67%);
+  padding-left: 2rem; /* More flexible and responsive */
+}
+
+/* Input field styling */
+input {
+  height: 2.8rem; /* More responsive unit (rem instead of px) */
+  width: 21rem; /* Defined in rem for scalability */
+  border-radius: 0.45rem; /* Subtle rounding */
+  margin: 0.6rem 0; /* Slightly adjusted margin */
+  border: 1px solid hsl(231, 7%, 60%);
+  padding: 0.8rem; /* Added padding inside input */
+  font-size: 1rem; /* Consistent font size */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 375px) {
+  form {
+    padding-top: 2rem; /* Adjusted to use rem for consistency */
+  }
+}
